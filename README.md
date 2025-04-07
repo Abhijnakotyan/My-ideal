@@ -7,7 +7,7 @@ This is a **frontend clone** of the official IDEAL Ice Cream website. It's built
 ---
 
 ## 🌐 Live Preview
-Check it out here 👉 [idealicecream.netlify.app]([https://67f3c111901b4b085138b3a2--idealicecream.netlify.app/])  
+Check it out here 👉 [idealicecream.netlify.app](https://67f3c111901b4b085138b3a2--idealicecream.netlify.app/) 
 
 ---
 ## 🛠️ Tools & Technologies
