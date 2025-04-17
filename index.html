@@ -11,27 +11,38 @@
       scroll-behavior: smooth;
     }
   </style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body class="bg-orange-50 font-sans">
 
   <!-- Header -->
-  <header class="bg-white-600 text-purple-500 shadow-lg sticky top-0 z-50">
+  <header class="bg-white text-purple-500 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold tracking-wide">IDEAL</h1>
+      <h1 class="text-3xl font-['Playfair_Display'] tracking-wide">IDEAL</h1>
       <nav class="flex space-x-6 text-lg">
-        <a href="#home" class="hover:text-purple-300 transition">Home</a>
-        <a href="#menu" class="hover:text-purple-300 transition">Menu</a>
-        <a href="#contact" class="hover:text-purple-300 transition">Contact</a>
+        <a href="#home" class="hover:text-purple-900 transition">Home</a>
+        <a href="menu.html" class="hover:text-purple-900 transition">Menu</a>
+        <a href="#contact" class="hover:text-purple-900 transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="relative h-screen">
-    <img src="idealhome.jpg" alt="Home Banner" class="w-full h-full object-cover brightness-75" />
-   
+  <section id="home" class="relative min-h-screen overflow-hidden">
+    <img id="slide" src="idealhome.jpg" alt="Slide" class="w-full h-full object-cover brightness-95">
   </section>
 
+  <script> 
+    const images=["idealhome.jpg","idealhome2.jpg"];
+    let index=0;
+    setInterval(()=>{
+      index=(index+1)%images.length;
+      document.getElementById("slide").src=images[index];
+    },3000);
+  </script>
   <!-- Menu Section -->
   <section id="menu" class="py-20">
     <h2 class="text-center text-4xl font-extrabold mb-12 text-purple-900">Bestsellers</h2>
@@ -40,42 +51,12 @@
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
         <img src="ipizza.png" alt="IPIZZA" class="w-full h-60 object-cover">
         <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">IPIZZA</h3>
+          <h3 class="text-2xl font-semibold text-purple-900">Frozen Deserts</h3>
+         <a href="menu.html" class="inline-block mt-4 px-6 py-2 bg-purple-700 text-white  hover:bg-purple-800 transition-colors">Explore more</a>
         </div>
       </div>
-      <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="icestick.png" alt="ICETREAT" class="w-full h-60 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">ICETREAT</h3>
-        </div>
-      </div>
-      <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="choconutz.png" alt="CHOCONUTZ" class="w-full h-60 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">CHOCONUTZ</h3>
-        </div>
-      </div>
-      <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="chocobar.png" alt="CHOCOBAR" class="w-full h-60 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">CHOCOBAR</h3>
-        </div>
-      </div>
-      <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="kone b.png" alt="KONE" class="w-full h-60 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">KONE</h3>
-        </div>
-      </div>
-      <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="koolgrape.png" alt="KOOLGRAPE" class="w-full h-60 object-cover">
-        <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">KOOLGRAPE</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
+     
+      
   <!-- Footer -->
   <footer id="contact" class="py-20 bg-purple-100 text-center">
     <h2 class="text-4xl font-extrabold text-purple-900 mb-6">Contact Us</h2>
