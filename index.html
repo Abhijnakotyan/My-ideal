@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IDEAL</title>
+  <title>MyIdeal</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=UT+Boldonse&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
   <style>
     html {
       scroll-behavior: smooth;
     }
   </style>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-
-
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 </head>
 <body class="bg-orange-50 font-sans">
 
   <!-- Header -->
-  <header class="bg-white text-purple-500 shadow-lg sticky top-0 z-50">
+  <header class=" text-white shadow-lg sticky top-0 z-50" style="background-color: #5c115c;">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-['Playfair_Display'] tracking-wide">IDEAL</h1>
+      <h1 class="text-3xl tracking-wide font-extrabold" style="font-family: 'Baloo 2', cursive;">IDEAL</h1>
       <nav class="flex space-x-6 text-lg">
         <a href="#home" class="hover:text-purple-900 transition">Home</a>
         <a href="menu.html" class="hover:text-purple-900 transition">Menu</a>
@@ -46,15 +46,23 @@
   <!-- Menu Section -->
   <section id="menu" class="py-20">
     <h2 class="text-center text-4xl font-extrabold mb-12 text-purple-900">Bestsellers</h2>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+
       <!-- Card Template -->
       <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
-        <img src="ipizza.png" alt="IPIZZA" class="w-full h-60 object-cover">
+        <img src="ipizza.png" alt="IPIZZA" class="w-full h-60 object-contain ">
         <div class="p-4 text-center">
-          <h3 class="text-2xl font-semibold text-purple-900">Frozen Deserts</h3>
+          <h3 class="text-2xl font-semibold text-purple-900">Treats</h3>
          <a href="menu.html" class="inline-block mt-4 px-6 py-2 bg-purple-700 text-white  hover:bg-purple-800 transition-colors">Explore more</a>
         </div>
       </div>
+     <div class="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+        <img src="famkaju.png" alt="IPIZZA" class="w-full h-60 object-contain ">
+        <div class="p-4 text-center">
+          <h3 class="text-2xl font-semibold text-purple-900">Family Packs</h3>
+         <a href="menu.html" class="inline-block mt-4 px-6 py-2 bg-purple-700 text-white  hover:bg-purple-800 transition-colors">Explore more</a>
+      </div>
+      </section>
      
       
   <!-- Footer -->
